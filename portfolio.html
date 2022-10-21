@@ -11,14 +11,14 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="red darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Itai Iloni</a>
-      
-       <ul class="right hide-on-med-and-down">
-       <li><a href="#" data-activates= "slide-out" class="button-collapse"><button class="mdi-navigation-menu"></button></a></li>
-        <li class="waves-effect"><a href="index.html">Dashboard</a></li>
-        <li class="waves-effect"><a href="experience.html">Experience</a></li>
-        <li class="active waves-effect"><a href="portfolio.html">Portfolio</a></li>
+  <!-- Navbar-->
+  <nav class="transparent z-depth-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo text-gradient-title"><strong>Itai Iloni</strong></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="waves-effect"><a href="index.html" class="black-text"><strong>Dashboard</strong></a></li>
+        <li class="waves-effect"><a href="experience.html" class="black-text"><strong>Experience</strong></a></li>
+        <li class="waves-effect"><a href="education.html" class="black-text"><strong>Education</strong></a></li>
+        <li class="active red darken-4 waves-effect"><a href="portfolio.html"><strong>Portfolio</strong></a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -29,14 +29,14 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br>
-      <h1 class="header center red-text text-darken-4">Portfolio</h1>
 
-      <br><br>
-
-    </div>
+  <!-- Title -->
+  <div class="red darken-4" id="index-banner">
+	<div class="container">
+	  <br>
+	  <h1 class="header center white-text"><strong>Portfolio</strong></h1>
+	  <br>
+	</div>
   </div>
 
 <!--   Entry Section   -->
@@ -44,66 +44,66 @@
     <div class="section">
 
 		<!-- Project Cards -->
-		<div class="row">
+		  <div class="row">
 
-			<!-- Window Manager-->
-			<div class="col s12 m4">
-				<div class="card">
-					<div class="card-image">
-						<img class="responsive-img" src="images/programming-original.jpg">
-						<a class="btn-floating halfway-fab tooltipped light-green accent-4" data-position="left" data-tooltip="Personal"><i class="material-icons">person</i></a>
-					</div>
-					<div class="divider"></div>
-					<div class="card-content">
-						<span class="card-title">Window Manager</span>
-						<p>Light-weight script to manage application window dimensions and position with simple keyboard shortcuts. Powered by AutoHotkey.</p>
-					</div>
-					<div class="card-action" style="text-align:center;margin:0 auto">
-						<a class="waves-effect waves-light btn red darken-2" href="https://github.com/iiloni/WindowManager">Learn More</a>
-					</div>
-				</div>
-			</div>
+		  	<!-- Window Manager-->
+		  	<div class="col s12 m4">
+		  		<div class="card">
+		  			<div class="card-image">
+		  				<img class="responsive-img" src="images/programming-original.jpg">
+		  				<a class="btn-floating halfway-fab tooltipped light-green accent-4" data-position="left" data-tooltip="Personal"><i class="material-icons">person</i></a>
+		  			</div>
+		  			<div class="divider"></div>
+		  			<div class="card-content">
+		  				<span class="card-title">Window Manager</span>
+		  				<p>Light-weight script to manage application window dimensions and position with simple keyboard shortcuts. Powered by AutoHotkey.</p>
+		  			</div>
+		  			<div class="card-action" style="text-align:center;margin:0 auto">
+		  				<a class="waves-effect waves-light btn red darken-2" href="https://github.com/iiloni/WindowManager">Learn More</a>
+		  			</div>
+		  		</div>
+		  	</div>
 
-			<!-- Valuable Institutions -->
-			<div class="col s12 m4">
-				<div class="card">
-					<div class="card-image">
-						<img class="responsive-img" src="images/valuable-institutions-chart.png">
-						<a class="btn-floating halfway-fab tooltipped blue" data-position="left" data-tooltip="Education"><i class="material-icons">school</i></a>
-					</div>
-					<div class="divider"></div>
-					<div class="card-content">
-						<span class="card-title">Valuable Institutions</span>
-						<p>Data science tutorial on performing effective data curation, management, and analysis using data from the US Department of Education on higher education institutions.</p>
-					</div>
-					<div class="card-action" style="text-align:center;margin:0 auto">
-						<a class="waves-effect waves-light btn red darken-2" href="https://iiloni-umd.github.io">Learn More</a>
-					</div>
-				</div>
-			</div>
+		  	<!-- Valuable Institutions -->
+		  	<div class="col s12 m4">
+		  		<div class="card">
+		  			<div class="card-image">
+		  				<img class="responsive-img" src="images/valuable-institutions-chart.png">
+		  				<a class="btn-floating halfway-fab tooltipped blue" data-position="left" data-tooltip="Education"><i class="material-icons">school</i></a>
+		  			</div>
+		  			<div class="divider"></div>
+		  			<div class="card-content">
+		  				<span class="card-title">Valuable Institutions</span>
+		  				<p>Data science tutorial on performing effective data curation, management, and analysis using data from the US Department of Education on higher education institutions.</p>
+		  			</div>
+		  			<div class="card-action" style="text-align:center;margin:0 auto">
+		  				<a class="waves-effect waves-light btn red darken-2" href="https://iiloni-umd.github.io">Learn More</a>
+		  			</div>
+		  		</div>
+		  	</div>
 
-			<!-- Portfolio Website -->
-			<div class="col s12 m4">
-					<div class="card">
-						<div class="card-image">
-							<img class="responsive-img" src="images/programming-original.jpg">
-							<a class="btn-floating halfway-fab tooltipped purple darken-2" data-position="left" data-tooltip="Professional"><i class="material-icons">work</i></a>
-						</div>
-						<div class="card-content">
-							<span class="card-title">Portfolio Website</span>
-							<p>Website offering a look at me beyond the contents of my resume. Explore my experiences, accomplishments, and education in-depth.</p>
-						</div>
-						<div class="card-action" style="text-align:center;margin:0 auto">
-							<a class="waves-effect waves-light btn red darken-2" href="index.html">Learn More</a>
-						</div>
-					</div>
-			</div>
-		</div>
+		  	<!-- Portfolio Website -->
+		  	<div class="col s12 m4">
+		  			<div class="card">
+		  				<div class="card-image">
+		  					<img class="responsive-img" src="images/programming-original.jpg">
+		  					<a class="btn-floating halfway-fab tooltipped purple darken-2" data-position="left" data-tooltip="Professional"><i class="material-icons">work</i></a>
+		  				</div>
+		  				<div class="card-content">
+		  					<span class="card-title">Portfolio Website</span>
+		  					<p>Website offering a look at me beyond the contents of my resume. Explore my experiences, accomplishments, and education in-depth.</p>
+		  				</div>
+		  				<div class="card-action" style="text-align:center;margin:0 auto">
+		  					<a class="waves-effect waves-light btn red darken-2" href="index.html">Learn More</a>
+		  				</div>
+		  			</div>
+		  	</div>
+		  </div>
     </div>
-</div>		
+  </div>		
  		<br><br>
  <!--Footer Section-->
-  <footer class="page-footer red darken-4">
+  <footer class="page-footer grey lighten-4">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
