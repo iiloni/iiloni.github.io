@@ -50,5 +50,8 @@ body {
 	/* background-image: linear-gradient(#24ca85, #1cb08f); */
 }
 
+.card.course {
+	height: 335px
+}
 
 
