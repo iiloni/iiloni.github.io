@@ -54,4 +54,18 @@ body {
 	height: 335px
 }
 
+.rounded {
+	border-radius: 25px;
+}
+
+.upper-rounded {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.lower-rounded {
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
 
