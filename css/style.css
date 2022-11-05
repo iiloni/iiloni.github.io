@@ -68,4 +68,35 @@ body {
 	border-bottom-right-radius: 25px;
 }
 
+.hoverable-orange {
+  transition: box-shadow .25s;
+  box-shadow: 0;
+}
+
+.hoverable-orange:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(245, 124, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hoverable-green {
+  transition: box-shadow .25s;
+  box-shadow: 0;
+}
+
+.hoverable-green:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(76, 175, 80, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.orange-darken-2-border {
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(245, 124, 0);
+}
+
+.green-border {
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(76, 175, 80);
+}
 
