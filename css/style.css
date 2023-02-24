@@ -63,6 +63,11 @@ body {
 	border-top-right-radius: 25px;
 }
 
+.card.rounded .card-image img {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
 .lower-rounded {
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;

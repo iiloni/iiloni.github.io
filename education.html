@@ -9,10 +9,13 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="icons/Favicon.png">
 
-  <!-- CSS  -->
+  <!-- CSS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- JS -->
+  <script src="js/elements.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -80,285 +83,145 @@
       <!-- Relevant Coursework-->
       <h3 id="umd-coursework" class="header red-text text-darken-4">Relevant Coursework</h3>
 
-      <div class="row">
-        <!-- CMSC320-->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-orange">
-            <div class="card-content">
-              <span class="card-title orange-text text-darken-2" style="font-size:1.5em"><a href="https://planetterp.com/course/CMSC320"
-                  style="color:inherit;text-decoration:inherit;"><strong>Data Science</strong></a></span>
-              <p>Broad overview of statistical data analysis, basic machine learning algorithms, large-scale data
-                management, cloud computing, and data visualization.</p>
-              <div class="card-action grey lighten-5 lower-rounded">
-                <div class="col s3">
-                  <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Python" src="icons/python.png"/>
-                </div>
-                <div class="col s3">
-                  <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Docker" src="icons/docker.png"/>
-                </div>
-                <div class="col s3">
-                  <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Jupyter" src="icons/jupyter.png"/>
-                </div>
-              </div>
-            </div>
+      <div id="card-container" class="row"></div>
+
+        <!-- Programming Languages-->
+        <div class="row">
+          <div class="col s12">
+            <h4 class="red-text text-darken-4 center">Coding Languages</h4>
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Python"
+              src="icons/python.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Java" src="icons/java.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="C" src="icons/c.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Ruby" src="icons/ruby.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Ocaml" src="icons/ocaml.png" />
+          </div>
+          <div class="col s2 m1 offset-s1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Matlab"
+              src="icons/matlab.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="R" src="icons/r-project.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="HTML" src="icons/html-5.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="CSS" src="icons/css-3.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="JS" src="icons/js.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="React" src="icons/react.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="LaTeX"
+              src="icons/latex-project.png" />
           </div>
         </div>
 
-        <!-- CMSC422-->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-orange">
-            <div class="card-content">
-              <span class="card-title orange-text text-darken-2" style="font-size:1.5em"><a href="https://planetterp.com/course/CMSC422"
-                  style="color:inherit;text-decoration:inherit;"><strong>Machine Learning</strong></a></span>
-              <p>Broad overview of existing methods for machine learning and an introduction to adaptive systems. Emphasis given to practical aspects of machine learning and data mining.
-              </p>
-            </div>
-            <div class="card-action grey lighten-5 lower-rounded">
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Python" src="icons/python.png"/>
-              </div>
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Jupyter" src="icons/jupyter.png"/>
-              </div>
-            </div>
+        <!-- Development Tools-->
+        <div class="row">
+          <div class="col s12">
+            <h4 class="red-text text-darken-4 center">Development Tools</h4>
+          </div>
+          <div class="col s2 m1 offset-m3">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Git" src="icons/git.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="GitHub"
+              src="icons/github.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Docker"
+              src="icons/docker.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Jupyter"
+              src="icons/jupyter.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Linux" src="icons/linux.png" />
+          </div>
+          <div class="col s2 m1">
+            <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Visual Studio Code"
+              src="icons/vs-code.png" />
           </div>
         </div>
 
-        <!-- PSYC354-->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-green">
-            <div class="card-content">
-              <span class="card-title green-text" style="font-size:1.5em"><a href="https://planetterp.com/course/PSYC354"
-                  style="color:inherit;text-decoration:inherit;"><strong>Multicultural Psychology</strong></a></span>
-              <p>Review of psychological implications of racism, sexism, homophobia and other structures of inequality
-                in the United States.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- PSYC361-->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-green">
-            <div class="card-content">
-              <span class="card-title green-text" style="font-size:1.5em"><a href="https://planetterp.com/course/PSYC361"
-                  style="color:inherit;text-decoration:inherit;"><strong>IO Psychology</strong></a></span>
-              <p>Survey of the field of industrial organizational psychology including: organizational entry,
-                organizational psychology, and workplace productivity.</p>
-            </div>
-          </div>
-        </div>
-      <!-- </div> -->
-
-      <!-- <div class="row"> -->
-        <!-- CMSC420-->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-orange">
-            <div class="card-content">
-              <span class="card-title orange-text text-darken-2" style="font-size:1.5em"><a href="https://planetterp.com/course/CMSC420"
-                  style="color:inherit;text-decoration:inherit;"><strong>Advanced Data Structures</strong></a></span>
-              <p>Description, properties, and storage allocation functions of data structures including balanced binary
-                trees, B-Trees, hash tables, skiplists, tries, KD-Trees and Quadtrees.</p>
-            </div>
-            <div class="card-action grey lighten-5 lower-rounded">
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Java" src="icons/java.png"/>
-              </div>
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Git" src="icons/git.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CMSC351-->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-orange">
-            <div class="card-content">
-              <span class="card-title orange-text text-darken-2" style="font-size:1.5em"><a href="https://planetterp.com/course/CMSC351"
-                  style="color:inherit;text-decoration:inherit;"><strong>Algorithms</strong></a></span>
-              <p>A systematic study of the complexity of elementary algorithms related to sorting, graphs and trees, and
-                combinatorics. Analysis of algorithms through recurrences and summations.</p>
-            </div>
-            <div class="card-action grey lighten-5 lower-rounded">
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="LaTeX" src="icons/latex-project.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PSYC300-->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-green">
-            <div class="card-content">
-              <span class="card-title green-text" style="font-size:1.5em"><a href="https://planetterp.com/course/PSYC300"
-                  style="color:inherit;text-decoration:inherit;"><strong>Research Methods</strong></a></span>
-              <p>Overview to the fundamental theoretical, conceptual, and practical issues in psychological research in
-                both the laboratory and the field.</p>
-            </div>
-            <div class="card-action grey lighten-5 lower-rounded">
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="R" src="icons/r-project.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      <!-- </div> -->
-
-      <!-- <div class="row"> -->
-        <!-- CMSC330 -->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-orange">
-            <div class="card-content">
-              <span class="card-title orange-text text-darken-2" style="font-size:1.5em"><a href="https://planetterp.com/course/CMSC330"
-                  style="color:inherit;text-decoration:inherit;"><strong>Organization of Languages</strong></a></span>
-              <p>A study of programming languages, including their syntax, semantics, and implementation - including dynamic, scripting, functional, and memory safe systems programming.</p>
-            </div>
-            <div class="card-action grey lighten-5 lower-rounded">
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Ruby" src="icons/ruby.png"/>
-              </div>
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Ocaml" src="icons/ocaml.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CMSC216 -->
-        <div class="col s12 m6 l4">
-          <div class="card small course rounded hoverable-orange">
-            <div class="card-content">
-              <span class="card-title orange-text text-darken-2" style="font-size:1.5em"><a href="https://planetterp.com/course/CMSC216"
-                  style="color:inherit;text-decoration:inherit;"><strong>Computer Systems</strong></a></span>
-              <p>Covers concepts including: C programming, introductory systems programming, assembly language, UNIX, machine data representation, thread management, optimization, and virtual memory.</p>
-            </div>
-            <div class="card-action grey lighten-5 lower-rounded">
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="C" src="icons/c.png"/>
-              </div>
-              <div class="col s3">
-                <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Linux" src="icons/linux.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      <!-- </div> -->
-
-      <!-- Programming Languages-->
-      <div class="row">
-        <div class="col s12"><h4 class="red-text text-darken-4 center">Coding Languages</h4></div>
-        <div class="col s2 offset-s1 m1 offset-m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Python" src="icons/python.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Java" src="icons/java.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="C" src="icons/c.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Ruby" src="icons/ruby.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Ocaml" src="icons/ocaml.png"/>
-        </div>
-        <div class="col s2 m1 offset-s1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Matlab" src="icons/matlab.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="R" src="icons/r-project.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="HTML" src="icons/html-5.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="CSS" src="icons/css-3.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="LaTeX" src="icons/latex-project.png"/>
-        </div>
-      </div>
-
-      <!-- Development Tools-->
-      <div class="row">
-        <div class="col s12"><h4 class="red-text text-darken-4 center">Development Tools</h4></div>
-        <div class="col s2 m1 offset-m3">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Git" src="icons/git.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="GitHub" src="icons/github.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Docker" src="icons/docker.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Jupyter" src="icons/jupyter.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Linux" src="icons/linux.png"/>
-        </div>
-        <div class="col s2 m1">
-          <img class="responsive-img tooltipped" data-position="bottom" data-tooltip="Visual Studio Code" src="icons/vs-code.png"/>
-        </div>
-      </div>
-
-      <hr>
-      <!-- Extracurricular Activities-->
-      <h3 class="header red-text text-darken-4">Extracurricular Activities</h3>
+        <hr>
+        <!-- Extracurricular Activities-->
+        <h3 class="header red-text text-darken-4">Extracurricular Activities</h3>
     </div>
-  </div>
 
-  <br><br>
-  <!--Footer Section-->
-  <footer class="page-footer grey lighten-4">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <div class="card">
-            <div class="card-content">
-              <h5 class="center">Autobiography</h5>
-              <p class="center">I'm a student who's found a passion in learning, expression, and most importantly -
-                technology. I strive for mastery of knowledge and application, both in my academics and in my personal
-                interests. I also enjoy more normal things, like video games, football, cars, cooking, and buying things
-                I don't need.</p>
+    <br><br>
+    <!--Footer Section-->
+    <footer class="page-footer grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <div class="card">
+              <div class="card-content">
+                <h5 class="center">Autobiography</h5>
+                <p class="center">I'm a student who's found a passion in learning, expression, and most importantly -
+                  technology. I strive for mastery of knowledge and application, both in my academics and in my personal
+                  interests. I also enjoy more normal things, like video games, football, cars, cooking, and buying
+                  things
+                  I don't need.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col l6 s12 center">
-          <div class="card">
-            <div class="card-content">
-              <h5>Connect</h5>
-            </div>
-            <div class="card-tabs">
-              <ul class="tabs red-text text-darken-4">
-                <li class="tab"><a href="#linkedin" style="color:inherit"><strong>LinkedIn</strong></a></li>
-                <li class="tab"><a href="#instagram" style="color:inherit"><strong>Instagram</strong></a></li>
-              </ul>
-            </div>
-            <div class="card-content grey lighten-4">
-              <div id="linkedin"><a href="https://www.linkedin.com/in/itai-iloni-9045a424b/"
-                  class="btn-flat waves-effect">Itai-Iloni</a></div>
-              <div id="instagram"><a href="https://www.instagram.com/itai_iloni/"
-                  class="btn-flat waves-effect">Itai_Iloni</a></div>
+          <div class="col l6 s12 center">
+            <div class="card">
+              <div class="card-content">
+                <h5>Connect</h5>
+              </div>
+              <div class="card-tabs">
+                <ul class="tabs red-text text-darken-4">
+                  <li class="tab"><a href="#linkedin" style="color:inherit"><strong>LinkedIn</strong></a></li>
+                  <li class="tab"><a href="#instagram" style="color:inherit"><strong>Instagram</strong></a></li>
+                </ul>
+              </div>
+              <div class="card-content grey lighten-4">
+                <div id="linkedin"><a href="https://www.linkedin.com/in/itai-iloni-9045a424b/"
+                    class="btn-flat waves-effect">Itai-Iloni</a></div>
+                <div id="instagram"><a href="https://www.instagram.com/itai_iloni/"
+                    class="btn-flat waves-effect">Itai_Iloni</a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container black-text">
-        Made by <strong>Itai Iloni</strong> using <a class="orange-text text-darken-4"
-          href="http://materializecss.com">Materialize</a>. Icons by <a class="orange-text text-darken-4" href="https://icons8.com">Icons8</a>.
+      <div class="footer-copyright">
+        <div class="container black-text">
+          Made by <strong>Itai Iloni</strong> using <a class="orange-text text-darken-4"
+            href="http://materializecss.com">Materialize</a>. Icons by <a class="orange-text text-darken-4"
+            href="https://icons8.com">Icons8</a>.
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+    <!--  Scripts-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/educard.js"></script>
+    <script>generateCards();</script>  
+    
+    
 
 </body>
 
