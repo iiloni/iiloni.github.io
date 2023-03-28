@@ -13,7 +13,10 @@ function EduCard({ title, course, desc, icons }) {
         { class: "col s12 m6 l4" },
         React.createElement(
             'div',
-            { class: "card small course rounded hoverable-" + mColor },
+            { 
+                class: "card rounded hoverable-" + mColor,
+                style: {display: "flex", 'flex-direction': "column"}
+            },
             React.createElement(
                 'div',
                 { class: "card-content" },
@@ -41,9 +44,9 @@ function EduCard({ title, course, desc, icons }) {
                     'p',
                     null,
                     desc
-                ),
-                cardIcons(icons)
-            )
+                )
+            ),
+            cardIcons(icons)
         )
     )
     )
@@ -73,6 +76,7 @@ function cardIcons(icons) {
             )
         );
     }
+    
     return React.createElement(
         'div',
         { class: "card-action grey lighten-5 lower-rounded" },
