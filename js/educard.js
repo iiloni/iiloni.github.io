@@ -132,6 +132,12 @@ const cardData = [
         icons: null
     },
     {
+        title: "Git, GitHub, and Project Management",
+        course: "CMSC389T",
+        desc: "Version control and collaboration are essential skills for developers to learn. Students will learn how to use Git for basic and advanced workflows, GitHub for team and project management, and explore tools to help them excel in a DevOps environment.",
+        icons: [{ name: "Git", src: "git" }, {name: "GitHub", src: "github"}, { name: "Docker", src: "docker" }, { name: "Java", src: "java" }]
+    },
+    {
         title: "Multicultural Psychology",
         course: "PSYC354",
         desc: "Review of psychological implications of racism, sexism, homophobia and other structures of inequality in the United States.",
