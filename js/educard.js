@@ -114,6 +114,12 @@ const cardData = [
         icons: [{ name: "HTML", src: "html-5" }, { name: "CSS", src: "css-3" }, { name: "JS", src: "js" }, { name: "React", src: "react" }]
     },
     {
+        title: "Data Science for Psychology",
+        course: "PSYC417",
+        desc: "Introduction into computational research methods in the fields of Psychology and Neuroscience through a hands-on approach with simulated and real data sets. Focus on basic procedural programming in R and Python to explore statistics and probability theory from a computational perspective.",
+        icons: [{ name: "R", src: "r-project" },{ name: "Python", src: "python" }]
+    },
+    {
         title: "Data Science",
         course: "CMSC320",
         desc: "Broad overview of statistical data analysis, basic machine learning algorithms, large-scale data management, cloud computing, and data visualization.",
