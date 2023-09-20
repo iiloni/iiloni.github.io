@@ -102,6 +102,12 @@ const cardData = [
         icons: [{ name: "Python", src: "python" }, { name: "Jupyter", src: "jupyter" }]
     },
     {
+        title: "Database Design",
+        course: "CMSC424",
+        desc: "Students are introduced to database systems and motivates the database approach as a mechanism for modeling the real world. An in-depth coverage of the relational model, logical database design, query languages, and other database concepts including query optimization, concurrency control; transaction management, and log based crash recovery. Distributed and Web database architectures are also discussed.",
+        icons: [{ name: "PostgreSQL", src: "postgresql" }, {name: "Django", src: "django"}]
+    },
+    {
         title: "Algorithm Design and Analysis",
         course: "CMSC451",
         desc: "Fundamental techniques for designing efficient computer algorithms, proving their correctness, and analyzing their complexity. General topics include graph algorithms, algorithm design paradigms (such as greedy algorithms, divide-and-conquer, and dynamic programming), network flows, NP-completeness, and other topics.",
@@ -132,6 +138,12 @@ const cardData = [
         icons: null
     },
     {
+        title: "Advanced Data Structures",
+        course: "CMSC420",
+        desc: "Description, properties, and storage allocation functions of data structures including balanced binary trees, B-Trees, hash tables, skiplists, tries, KD-Trees and Quadtrees.",
+        icons: [{ name: "Java", src: "java" }, { name: "Git", src: "git" }]
+    },
+    {
         title: "Git, GitHub, and Project Management",
         course: "CMSC389T",
         desc: "Version control and collaboration are essential skills for developers to learn. Students will learn how to use Git for basic and advanced workflows, GitHub for team and project management, and explore tools to help them excel in a DevOps environment.",
@@ -150,16 +162,16 @@ const cardData = [
         icons: null
     },
     {
-        title: "Advanced Data Structures",
-        course: "CMSC420",
-        desc: "Description, properties, and storage allocation functions of data structures including balanced binary trees, B-Trees, hash tables, skiplists, tries, KD-Trees and Quadtrees.",
-        icons: [{ name: "Java", src: "java" }, { name: "Git", src: "git" }]
-    },
-    {
         title: "Intro. Algorithms",
         course: "CMSC351",
         desc: "A systematic study of the complexity of elementary algorithms related to sorting, graphs and trees, and combinatorics. Analysis of algorithms through recurrences and summations.",
         icons: [{ name: "LaTeX", src: "latex-project" }]
+    },
+    {
+        title: "Intro. Computer Systems",
+        course: "CMSC216",
+        desc: "Covers concepts including: C programming, introductory systems programming, assembly language, UNIX, machine data representation, thread management, optimization, and virtual memory.",
+        icons: [{ name: "C", src: "c" }, { name: "Linux", src: "linux" }]
     },
     {
         title: "Research Methods",
@@ -168,15 +180,15 @@ const cardData = [
         icons: [{ name: "R", src: "r-project" }]
     },
     {
+        title: "Compilers",
+        course: "CMSC430",
+        desc: "opics include lexical analysis, parsing, intermediate representations, program analysis, optimization, and code generation.",
+        icons: [{ name: "Racket", src: "racket" }, {name: "C", src: "c"}]
+    },
+    {
         title: "Organization of Programming Languages",
         course: "CMSC330",
         desc: "A study of programming languages, including their syntax, semantics, and implementation - including dynamic, scripting, functional, and memory safe systems programming.",
         icons: [{ name: "Ruby", src: "ruby" }, { name: "OCaml", src: "ocaml" }]
-    },
-    {
-        title: "Intro. Computer Systems",
-        course: "CMSC216",
-        desc: "Covers concepts including: C programming, introductory systems programming, assembly language, UNIX, machine data representation, thread management, optimization, and virtual memory.",
-        icons: [{ name: "C", src: "c" }, { name: "Linux", src: "linux" }]
     },
 ];
