@@ -14,7 +14,7 @@ function EduCard({ title, course, desc, icons }) {
         React.createElement(
             'div',
             { 
-                class: "card rounded hoverable-" + mColor,
+                class: "card rounded hoverable-" + mColor + " " + (colorDarken == "" ? "green-border" : "orange-darken-2-border"),
                 style: {display: "flex", 'flex-direction': "column"}
             },
             React.createElement(
