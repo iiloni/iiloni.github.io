@@ -197,7 +197,7 @@ const cardData = [
     {
         title: "Compilers",
         course: "CMSC430",
-        desc: "opics include lexical analysis, parsing, intermediate representations, program analysis, optimization, and code generation.",
+        desc: "Topics include lexical analysis, parsing, intermediate representations, program analysis, optimization, and code generation.",
         icons: [{ name: "Racket", src: "racket" }, {name: "C", src: "c"}]
     },
     {
