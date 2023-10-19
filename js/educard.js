@@ -94,6 +94,9 @@ function generateCards() {
     cardRoot.render(EduCards);
 }
 
+/**
+ * Course card objects in order of decreasing relevance.
+ */
 const cardData = [
     {
         title: "Machine Learning",
@@ -114,6 +117,12 @@ const cardData = [
         icons: [{ name: "LaTeX", src: "latex-project" }]
     },
     {
+        title: "Data Science",
+        course: "CMSC320",
+        desc: "Broad overview of statistical data analysis, basic machine learning algorithms, large-scale data management, cloud computing, and data visualization.",
+        icons: [{ name: "Python", src: "python" }, { name: "Docker", src: "docker" }, { name: "Jupyter", src: "jupyter" }]
+    },
+    {
         title: "Human-Computer Interaction",
         course: "CMSC434",
         desc: "Assess usability by quantitative and qualitative methods. Conduct task analyses, usability tests, expert reviews of working products by interviews, surveys, and logging. Apply design processes and guidelines to develop professional quality user interfaces. Build low-fidelity mockups and high-fidelity prototypes using contemporary tools",
@@ -124,12 +133,6 @@ const cardData = [
         course: "PSYC417",
         desc: "Introduction into computational research methods in the fields of Psychology and Neuroscience through a hands-on approach with simulated and real data sets. Focus on basic procedural programming in R and Python to explore statistics and probability theory from a computational perspective.",
         icons: [{ name: "R", src: "r-project" },{ name: "Python", src: "python" }]
-    },
-    {
-        title: "Data Science",
-        course: "CMSC320",
-        desc: "Broad overview of statistical data analysis, basic machine learning algorithms, large-scale data management, cloud computing, and data visualization.",
-        icons: [{ name: "Python", src: "python" }, { name: "Docker", src: "docker" }, { name: "Jupyter", src: "jupyter" }]
     },
     {
         title: "Industrial-Organizational Psychology",
@@ -168,10 +171,22 @@ const cardData = [
         icons: [{ name: "LaTeX", src: "latex-project" }]
     },
     {
+        title: "Health Psychology",
+        course: "PSYC344",
+        desc: "An examination of how psychological, biological, and social factors impact physical health and well-being. Students will use the biopsychosocial model to analyze topics including stress, health disparities, pain, addiction, disease states (e.g., cardiovascular disease, diabetes, cancer), and primary prevention.",
+        icons: null
+    },
+    {
         title: "Intro. Computer Systems",
         course: "CMSC216",
         desc: "Covers concepts including: C programming, introductory systems programming, assembly language, UNIX, machine data representation, thread management, optimization, and virtual memory.",
         icons: [{ name: "C", src: "c" }, { name: "Linux", src: "linux" }]
+    },
+    {
+        title: "Clinical Psychology",
+        course: "PSYC436",
+        desc: "Critical analysis of clinical psychology, with particular emphasis on current developments and trends.",
+        icons: null
     },
     {
         title: "Research Methods",
