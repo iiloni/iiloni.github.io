@@ -54,7 +54,28 @@
 		<div class="section">
 
 			<!-- Project Cards -->
-			<div class="row">
+			<div class="row" data-masonry='{"percentPosition": true }'>
+
+				<!-- MusicTag -->
+				<div class="col s12 m6 xl4">
+					<div class="card rounded">
+						<div class="card-image">
+							<img class="responsive-img" src="images/musictag.png">
+							<a class="btn-floating halfway-fab tooltipped light-green accent-4" data-position="left"
+								data-tooltip="Personal"><i class="material-icons">person</i></a>
+						</div>
+						<div class="divider"></div>
+						<div class="card-content">
+							<span class="card-title">MusicTag for Spotify</span>
+							<p>Categorize and organize the songs in your Spotify library with ease.
+								Created with React, Next.JS, and Mantine with a MongoDB back-end.</p>
+						</div>
+						<div class="card-action lower-rounded" style="text-align:center;margin:0 auto">
+							<a class="waves-effect waves-light btn red darken-2"
+								href="https://musictag.vercel.app">Visit Project</a>
+						</div>
+					</div>
+				</div>
 
 				<!-- UMD Course Analysis -->
 				<div class="col s12 m6 xl4">
@@ -78,7 +99,7 @@
 				</div>
 
 				<!-- Portfolio Website -->
-				<div class="col s12 m6 offset-m3 xl4">
+				<div class="col s12 m6 xl4">
 					<div class="card rounded">
 						<div class="card-image">
 							<img class="responsive-img" src="images/programming-original.jpg">
@@ -144,6 +165,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -197,6 +219,7 @@
 
 	<!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
 
