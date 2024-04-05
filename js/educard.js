@@ -13,9 +13,9 @@ function EduCard({ title, course, desc, icons }) {
         { class: "col s12 m6 l4" },
         React.createElement(
             'div',
-            { 
+            {
                 class: "card rounded hoverable-" + mColor + " " + (colorDarken == "" ? "green-border" : "orange-darken-2-border"),
-                style: {display: "flex", 'flex-direction': "column"}
+                style: { display: "flex", 'flex-direction': "column" }
             },
             React.createElement(
                 'div',
@@ -24,14 +24,16 @@ function EduCard({ title, course, desc, icons }) {
                     'span',
                     {
                         class: "card-title " + mColor + "-text" + colorDarken,
-                        style: {'font-size': "1.5em"}
+                        style: { 'font-size': "1.5em" }
                     },
                     React.createElement(
                         'a',
                         {
                             href: "https://planetterp.com/course/" + course,
                             style: { color: "inherit", 'text-decoration': "inherit" },
-                            class: "center"
+                            class: "center",
+                            target: "_blank",
+                            rel: "noopener noreferrer"
                         },
                         React.createElement(
                             'strong',
@@ -76,7 +78,7 @@ function cardIcons(icons) {
             )
         );
     }
-    
+
     return React.createElement(
         'div',
         { class: "card-action grey lighten-5 lower-rounded" },
@@ -108,7 +110,7 @@ const cardData = [
         title: "Database Design",
         course: "CMSC424",
         desc: "Students are introduced to database systems and motivates the database approach as a mechanism for modeling the real world. An in-depth coverage of the relational model, logical database design, query languages, and other database concepts including query optimization, concurrency control; transaction management, and log based crash recovery. Distributed and Web database architectures are also discussed.",
-        icons: [{ name: "PostgreSQL", src: "postgresql" }, {name: "Django", src: "django"}]
+        icons: [{ name: "PostgreSQL", src: "postgresql" }, { name: "Django", src: "django" }]
     },
     {
         title: "Algorithm Design and Analysis",
@@ -132,7 +134,7 @@ const cardData = [
         title: "Data Science for Psychology",
         course: "PSYC417",
         desc: "Introduction into computational research methods in the fields of Psychology and Neuroscience through a hands-on approach with simulated and real data sets. Focus on basic procedural programming in R and Python to explore statistics and probability theory from a computational perspective.",
-        icons: [{ name: "R", src: "r-project" },{ name: "Python", src: "python" }]
+        icons: [{ name: "R", src: "r-project" }, { name: "Python", src: "python" }]
     },
     {
         title: "Industrial-Organizational Psychology",
@@ -150,13 +152,19 @@ const cardData = [
         title: "Git, GitHub, and Project Management",
         course: "CMSC389T",
         desc: "Version control and collaboration are essential skills for developers to learn. Students will learn how to use Git for basic and advanced workflows, GitHub for team and project management, and explore tools to help them excel in a DevOps environment.",
-        icons: [{ name: "Git", src: "git" }, {name: "GitHub", src: "github"}, { name: "Docker", src: "docker" }, { name: "Java", src: "java" }]
+        icons: [{ name: "Git", src: "git" }, { name: "GitHub", src: "github" }, { name: "Docker", src: "docker" }, { name: "Java", src: "java" }]
     },
     {
-        title: "Multicultural Psychology",
-        course: "PSYC354",
-        desc: "Review of psychological implications of racism, sexism, homophobia and other structures of inequality in the United States.",
+        title: "Counseling Psychology",
+        course: "PSYC432",
+        desc: "Analysis of research and intervention strategies developed and used by counseling psychologists. Historical and current trends in content and methodology.",
         icons: null
+    },
+    {
+        title: "Research Methods",
+        course: "PSYC300",
+        desc: "Overview to the fundamental theoretical, conceptual, and practical issues in psychological research in both the laboratory and the field.",
+        icons: [{ name: "R", src: "r-project" }]
     },
     {
         title: "Cognitive Psychology",
@@ -171,9 +179,15 @@ const cardData = [
         icons: [{ name: "LaTeX", src: "latex-project" }]
     },
     {
-        title: "Health Psychology",
-        course: "PSYC344",
-        desc: "An examination of how psychological, biological, and social factors impact physical health and well-being. Students will use the biopsychosocial model to analyze topics including stress, health disparities, pain, addiction, disease states (e.g., cardiovascular disease, diabetes, cancer), and primary prevention.",
+        title: "Clinical Psychology",
+        course: "PSYC436",
+        desc: "Critical analysis of clinical psychology, with particular emphasis on current developments and trends.",
+        icons: null
+    },
+        {
+        title: "Psychology of Interpersonal Relationships",
+        course: "PSYC334",
+        desc: "Research, theory and their practical applications pertaining to the development, maintenance and dissolution of human relationships. Processes critical to successful relating (e.g., communication, bargaining, conflict resolution), and issues associated with troubled dyadic relations with equal partners (e.g., jealousy, spouse abuse, divorce).",
         icons: null
     },
     {
@@ -183,22 +197,28 @@ const cardData = [
         icons: [{ name: "C", src: "c" }, { name: "Linux", src: "linux" }]
     },
     {
-        title: "Clinical Psychology",
-        course: "PSYC436",
-        desc: "Critical analysis of clinical psychology, with particular emphasis on current developments and trends.",
+        title: "Multicultural Psychology",
+        course: "PSYC354",
+        desc: "Review of psychological implications of racism, sexism, homophobia and other structures of inequality in the United States.",
         icons: null
     },
     {
-        title: "Research Methods",
-        course: "PSYC300",
-        desc: "Overview to the fundamental theoretical, conceptual, and practical issues in psychological research in both the laboratory and the field.",
-        icons: [{ name: "R", src: "r-project" }]
+        title: "Health Psychology",
+        course: "PSYC344",
+        desc: "An examination of how psychological, biological, and social factors impact physical health and well-being. Students will use the biopsychosocial model to analyze topics including stress, health disparities, pain, addiction, disease states (e.g., cardiovascular disease, diabetes, cancer), and primary prevention.",
+        icons: null
+    },
+    {
+        title: "Addiction Psychology",
+        course: "PSYC437",
+        desc: "Explores the current research in assessment and treatment of addictive behaviors. Topics may include addictions in the areas of alcohol, drugs, nicotine, gambling, and eating.",
+        icons: null
     },
     {
         title: "Compilers",
         course: "CMSC430",
         desc: "Topics include lexical analysis, parsing, intermediate representations, program analysis, optimization, and code generation.",
-        icons: [{ name: "Racket", src: "racket" }, {name: "C", src: "c"}]
+        icons: [{ name: "Racket", src: "racket" }, { name: "C", src: "c" }]
     },
     {
         title: "Organization of Programming Languages",
